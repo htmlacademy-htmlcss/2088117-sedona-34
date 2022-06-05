@@ -197,13 +197,20 @@ line-height: 40px;
     font-weight: 700;
     color: #ffffff;
 }
+.breadcrumbs{
+color: #ffffff;
+}
 
-.backgound-picture{
+.breadcrumbs-link{
+    color: inherit;
+}
+.sorting-container{
     background-image: url("../images/catalog/filter-background.jpg");
     background-color: rgb(28, 61, 83);
 background-size: 100% auto;
 background-repeat: no-repeat;
 color: #ffffff;
+text-align: left;
 }
 
 .catalog-filter-title{
