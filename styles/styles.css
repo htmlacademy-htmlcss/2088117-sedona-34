@@ -1,9 +1,9 @@
 @font-face {
     font-family: "PT Sans";
     font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/ptsans-400.woff2") format("woff2");
-  font-display: swap;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
 }
 
 @font-face {
@@ -12,27 +12,127 @@
     font-weight: 700;
     src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
-  }
-
-body {
-    font-family: "PT Sans" sans-serif;
-    font-size: 18px;
-line-height: 21px;
-color: #000000;
-background-color: #ffffff;
 }
 
-.page-header {
+body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
     color: #000000;
-background-color: #ffffff;
-  }
-  .navigation-link{
-    font-family: "PT Sans" sans-serif;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.button {
+    font-family: inherit;
     font-size: 20px;
-line-height: 26px;
-font-weight: 700;
-text-align: center;
-color: #000000;
-  background-color: #ffffff;
-  text-decoration: none;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+    background-color:#756157;
+    text-decoration: none;
+    text-transform: uppercase;
   }
+
+  .button-header{
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .newsletter-button{
+    background-color: #82B3D3;
+  }
+
+  .button-social{
+    color: #000000;
+    background-color:#ffffff;
+  }
+
+.navigation-link {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000000;
+    text-decoration: none;
+}
+
+.welcome {
+    background-image: url("../images/index-background.jpg");
+    background-color: rgb(28, 61, 83);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.content-title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.advantages-item {
+    background-color:  #82B3D3;
+}
+
+.advantages-list{
+    background-color: #ffffff;
+}
+.advantages-item-inner{
+    background-color:  rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-food {
+    background-color: #ffffff;
+}
+
+.advantages-item-road {
+    background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-title {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.advantages-title-img {
+    color: #ffffff;
+}
+
+.choose-hotel{
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.subscribe-main {
+background-image: url("../images/background-email.jpg");
+background-color: rgb(28, 61, 83);
+background-size: 100% auto;
+background-repeat: no-repeat;
+font-size: 22px;
+line-height: 26px;
+}
+
+.footer-number {
+    font-size: 40px;
+line-height: 40px;
+}
+
+.footer-number a {
+    color: #000000;
+    text-decoration: none;
+}
+.field{
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    background-color: #ffffff;
+    text-align: left;
+}
