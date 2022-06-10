@@ -64,6 +64,9 @@ body {
     padding: 0;
 }
 
+.navigation-logo{
+    margin-left: 70px;
+}
 .writing {
     display: block;
     margin: 0 auto;
@@ -311,12 +314,25 @@ body {
 }
 
 .sorting-container {
+   
     background-image: url("../images/catalog/filter-background.jpg");
     background-color: rgb(28, 61, 83);
     background-size: 100% auto;
     background-repeat: no-repeat;
     color: #ffffff;
     text-align: left;
+}
+
+.hotels-filter-wrap{
+    display: flex;
+    margin: 0 70px;
+    justify-content: space-between;
+    align-content: flex-end;
+}
+
+.radio-wrap{
+    display: flex;
+    flex-direction: row;
 }
 
 .catalog-filter-title {
@@ -365,4 +381,36 @@ body {
     background-color: #ffffff;
     text-align: left;
     font-weight: 400;
+}
+
+
+
+.catalog-filter-wrap{
+    display: flex;
+    flex-direction: column;
+    margin: 0 73px;
+    justify-content: space-between;
+
+}
+
+.hotel-card{
+    margin: 0;
+    padding: 0;
+    width: 340px;
+}
+
+.pagination-wrap{
+    display: flex;
+    margin: 0 73px;
+    justify-content: space-between;
+}
+
+.hotel-list {
+    margin:0;
+    padding: 0;
+}
+
+.pagination{
+    margin:0;
+    padding: 0;
 }
