@@ -48,7 +48,7 @@ body {
 }
 
 .navigation-list {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   width: 390px;
   margin: 0;
@@ -116,7 +116,7 @@ body {
   overflow: hidden;
 }
 
-.about-sedona{
+.about-sedona {
   padding-top: 63px;
   padding-bottom: 90px;
 }
@@ -138,11 +138,6 @@ body {
   font-weight: 400;
   background-color: rgba(131, 179, 211, 0);
   text-transform: capitalize;
-}
-
-.button-select {
-  background-color: rgba(255, 255, 255, 0);
-  color: #000000;
 }
 
 .product-card-button {
@@ -190,15 +185,21 @@ body {
   text-align: center;
   color: #000000;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
 
 .content-title-subscribe {
   color: #ffffff;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages-item {
@@ -232,6 +233,7 @@ body {
 .advantages-item-inner {
   background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
+
 }
 
 .advantages-item-food {
@@ -250,6 +252,8 @@ body {
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages-title-img {
@@ -293,22 +297,27 @@ body {
 }
 
 .footer-social-list {
- display: flex;
- flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
   width: 130px;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-.footer-social{
+
+.footer-social {
   margin-left: 70px;
 }
 
-.footer-social-item{
+.footer-social-item {
   min-width: 22px;
   min-height: 17px;
   margin-right: 11px;
   margin-bottom: 11px;
+}
+
+.footer-social-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .footer-social-item:nth-child(3n) {
@@ -346,6 +355,8 @@ body {
   line-height: 28px;
   font-weight: 700;
   color: #000000;
+  margin: 0;
+  padding: 0;
 
 }
 
@@ -358,39 +369,89 @@ body {
   line-height: 78px;
   font-weight: 700;
   color: #ffffff;
+  margin: 0;
+  padding: 0;
 }
 
 .breadcrumbs {
+  display: flex;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
   color: #ffffff;
+  list-style-type: none;
 }
 
 .breadcrumbs-link {
   color: inherit;
+  margin-right: 10px;
+}
+
+.filter-wrap {
+  display: flex;
+
+}
+
+.catalog-filter {
+  margin-right: 70px;
+}
+
+.catalog-filter-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .sorting-container {
-
+  display: flex;
   background-image: url("../images/catalog/filter-background.jpg");
   background-color: rgb(28, 61, 83);
   background-size: 100% auto;
   background-repeat: no-repeat;
   color: #ffffff;
   text-align: left;
+  padding: 35px 70px 70px 70px;
+  margin-bottom: 5px;
 }
 
-.hotels-filter-wrap {
+.filters-inner {
   display: flex;
-  margin: 0 70px;
-  justify-content: space-between;
-  align-content: flex-end;
+  margin: 0;
+  padding: 50px 70px 56px 70px;
+}
+
+.button-select {
+  background-color: rgba(255, 255, 255, 0);
+  color: #000000;
+  min-width: 16px;
+  min-height: 14px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  border: solid 2px;
+}
+
+.button-select:last-child {
+  margin-right: 0;
+}
+
+
+.filter-field {
+  min-width: 290px;
+  min-height: 49px;
+  margin-left: 191px;
+  margin-right: 78px;
 }
 
 .catalog-filter-title {
   font-weight: 700;
+  margin: 0;
+  padding: 0;
 }
 
 .hotel-card-text {
   text-align: left;
+  margin: 0;
+  padding: 0;
 }
 
 .rating {
@@ -410,17 +471,31 @@ body {
   font-weight: 400;
 }
 
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  padding: 12px 24px;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
   color: #ffffff;
   background-color: #82B3D3;
+  text-decoration: none;
 }
 
 .pagination-link-current {
   color: #000000;
   background-color: #F2F2F2;
+}
+
+.select-page {
+  padding: 5px 0;
 }
 
 .select-page-view {
@@ -454,11 +529,25 @@ body {
 }
 
 .hotel-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
-  padding: 0;
+  padding: 0 72px 66px 72px;
+  list-style-type: none;
+}
+
+.hotel-card {
+  margin: 0;
+  margin-right: 18px;
+}
+
+.hotel-card:nth-child(3n) {
+  margin-right: 0;
 }
 
 .pagination {
+  display: flex;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
