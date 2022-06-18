@@ -116,10 +116,7 @@ body {
   overflow: hidden;
 }
 
-.about-sedona {
-  padding-top: 63px;
-  padding-bottom: 90px;
-}
+
 
 .button-social {
   color: #000000;
@@ -189,16 +186,39 @@ body {
   padding: 0;
 }
 
+.about-sedona {
+  padding: 63px 290px 90px 290px;
+}
+
+.five-reasons {
+  margin-bottom: 31px;
+}
+
+.five-reasons-text {
+  margin: 0;
+  padding: 0;
+}
+
+
+
 .advantages {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  align-items: center;
 }
 
 .content-title-subscribe {
   color: #ffffff;
   margin: 0;
+  margin-bottom: 29px;
+  padding: 0;
+}
+
+.text-subscribe {
+  margin: 0;
+  margin-bottom: 46px;
   padding: 0;
 }
 
@@ -212,38 +232,54 @@ body {
 .advantages-wrap {
   display: flex;
   flex-direction: row;
-
 }
 
 .advantages-wrap-text {
   display: flex;
   flex-direction: column;
-  align-content: center;
+  padding: 92px 85px;
+  color: #ffffff;
+}
+
+.second-row-text {
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+  padding: 92px 85px;
+}
+
+.forth-row-text {
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+  padding: 80px 85px;
 }
 
 .advantages-list {
   background-color: #ffffff;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
+  justify-content: space-around;
 }
 
 .advantages-item-inner {
   background-color: rgba(131, 179, 211, 0.12);
-  width: 400px;
 
+  margin: 0;
+  flex-grow: 1;
 }
 
 .advantages-item-food {
   background-color: #ffffff;
-  width: 400px;
+
+  margin: 0;
+  flex-grow: 1;
 }
 
 .advantages-item-road {
   background-color: rgba(131, 179, 211, 0.2);
-  width: 400px;
 }
 
 .advantages-title {
@@ -253,6 +289,7 @@ body {
   color: #000000;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 30px;
   padding: 0;
 }
 
@@ -260,12 +297,33 @@ body {
   color: #ffffff;
 }
 
+.number {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.advantages-item-text {
+  margin: 0;
+  padding: 0;
+}
+
 .choose-hotel {
   font-size: 22px;
   line-height: 26px;
-  padding-top: 92px;
-  padding-bottom: 92px;
+  padding: 92px 313px;
 }
+
+.interest {
+  margin-bottom: 29px;
+}
+
+.interest-text {
+  margin: 0;
+  margin-bottom: 56px;
+  padding: 0;
+}
+
 
 .subscribe {
   background-color: rgb(28, 61, 83);
@@ -273,8 +331,7 @@ body {
   background-repeat: no-repeat;
   font-size: 22px;
   line-height: 26px;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 94px 200px;
 }
 
 .subscribe-main {
