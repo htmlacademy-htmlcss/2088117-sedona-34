@@ -461,6 +461,7 @@ body {
 
 .sorting-container {
   display: flex;
+  flex-direction: column;
   background-image: url("../images/catalog/filter-background.jpg");
   background-color: rgb(28, 61, 83);
   background-size: 100% auto;
