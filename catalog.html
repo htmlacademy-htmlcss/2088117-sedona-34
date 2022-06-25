@@ -65,12 +65,10 @@
             </ol>
           </header>
 
+          <form  class="filter-wrap" action="#" method="get">
           <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
-
-          <fieldset class="filter-wrap">
-            <form class="catalog-filter filter-infra" action="#" method="get">
-
-              <h2 class="catalog-filter-title">Инфраструктура</h2>
+          <fieldset class="catalog-filter filter-infra">
+              <legend class="catalog-filter-title">Инфраструктура</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
@@ -91,13 +89,11 @@
                   </label>
                 </li>
               </ul>
+</fieldset>
 
-            </form>
+            <fieldset class="catalog-filter filter-type">
 
-
-            <form class="catalog-filter filter-type" action="#" method="get">
-
-              <h2 class="catalog-filter-title">Тип Жилья</h2>
+              <legend class="catalog-filter-title">Тип Жилья</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
@@ -118,15 +114,12 @@
                   </label>
                 </li>
               </ul>
-
-            </form>
-
-
+            </fieldset>
 
             <button class="button button-choose" type="submit">Применить </button>
             <button class="button button-reset" type="reset">Сбросить </button>
+          </form>
 
-          </fieldset>
         </section>
 
 
@@ -257,8 +250,8 @@
         </div>
 
         <section class="subscribe subscribe-inner">
-          <h2 class="content-title">Подпишитесь на рассылку</h2>
-          <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <h2 class="content-title subscribe-title-inner">Подпишитесь на рассылку</h2>
+          <p class="text-subscribe">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="newsletter-form" action="#" method="post">
 
             <label for="newsletter-email" class="visually-hidden">Email</label>
