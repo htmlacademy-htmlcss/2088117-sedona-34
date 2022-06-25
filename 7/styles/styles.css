@@ -226,14 +226,18 @@ body {
   list-style-type: none;
 }
 
-.real-city {
-  grid-column: 1/2;
+.first-row {
+  display: flex;
+  grid-column: 1/-1;
   grid-row: 1/2;
+  color: #ffffff;
 }
 
-.real-city-foto {
-  grid-column: 2/-1;
-  grid-row: 1/2;
+.third-row {
+  display: flex;
+  grid-column: 1/-1;
+  grid-row: 3/4;
+  color: #ffffff;
 }
 
 .apartment {
@@ -283,10 +287,16 @@ body {
   padding: 0;
 }
 
+.subscribe-title-inner {
+  margin: 0;
+  margin-bottom: 29px;
+  padding: 0;
+}
+
 .text-subscribe {
   margin: 0;
   margin-bottom: 46px;
-  padding: 0;
+  padding: 0 162px;
 }
 
 .advantages-item {
@@ -480,6 +490,7 @@ body {
   font-weight: 700;
   color: #ffffff;
   margin: 0;
+  margin-bottom: 10px;
   padding: 0;
 }
 
@@ -563,6 +574,8 @@ body {
 }
 
 .catalog-filter-item {
+  margin: 0;
+  padding: 0;
   margin-bottom: 15px;
 }
 
