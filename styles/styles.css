@@ -117,14 +117,15 @@ body {
   text-transform: uppercase;
   white-space: nowrap;
   border-radius: 4px;
+  border: none;
+  cursor: pointer;
 }
 
 .button-header {
   font-size: 16px;
   line-height: 20px;
+  width: 130px;
   padding: 8px 15px;
-  border: none;
-  cursor: pointer;
   margin-top: 14px;
   margin-bottom: 14px;
   margin-left: 20px;
@@ -219,8 +220,14 @@ body {
   background-color: rgb(28, 61, 83);
   background-size: 100% auto;
   background-repeat: no-repeat;
+  max-height: 485px;
 }
 
+.welcome::after {
+  content: url('../images/icons/divider.svg');
+  position: relative;
+  bottom: 56px;
+  }
 .content-title {
   font-size: 30px;
   line-height: 36px;
@@ -422,6 +429,11 @@ body {
   margin: 0;
   margin-bottom: 56px;
   padding: 0;
+}
+
+.find-hotel-index {
+  width: 544px;
+  padding: 12px 15px;
 }
 
 
