@@ -280,14 +280,29 @@ body {
   grid-row: 2/3;
 }
 
+.apartment::before {
+  content: url('../images/icons/house.svg');
+  margin-bottom: 30px;
+}
+
 .food {
   grid-column: 2/3;
   grid-row: 2/3;
 }
 
+.food::before {
+  content: url('../images/icons/food.svg');
+  margin-bottom: 30px;
+}
+
 .souvenir {
   grid-column: 3/4;
   grid-row: 2/3;
+}
+
+.souvenir::before {
+  content: url('../images/icons/present.svg');
+  margin-bottom: 30px;
 }
 
 .bridge-foto {
