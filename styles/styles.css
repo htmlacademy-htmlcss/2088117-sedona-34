@@ -203,7 +203,7 @@ body {
 }
 
 .about-sedona {
-  padding: 63px 290px 90px 290px;
+  padding: 63px 273px 90px 273px;
 }
 
 .five-reasons {
@@ -213,6 +213,10 @@ body {
 .five-reasons-text {
   margin: 0;
   padding: 0;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  white-space: nowrap;
 }
 
 
@@ -507,6 +511,7 @@ body {
 .breadcrumbs-link {
   color: inherit;
   margin-right: 10px;
+  font-size: 16px;
 }
 
 .filter-wrap {
