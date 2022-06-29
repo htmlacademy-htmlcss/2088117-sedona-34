@@ -219,6 +219,7 @@ body {
 }
 
 .navigation-link {
+  position: relative;
   display: block;
   padding: 20px 17px;
   font-size: 20px;
@@ -229,9 +230,13 @@ body {
   margin: 0;
 }
 
-.navigation-link-current {
-  text-decoration: underline;
-}
+.navigation-link-current::before{
+     position: absolute;
+     bottom: 0;
+    height: 20px;
+    background-color: #756257;
+    content: "";
+  }
 
 .welcome {
   background-image: url("../images/index-background.jpg");
@@ -646,23 +651,48 @@ body {
   color: #ffffff;
   text-align: left;
   padding: 35px 70px 70px 70px;
-  margin-bottom: 5px;
 }
 
 .filters-inner {
   display: flex;
-  margin: 0;
-  padding: 50px 70px 56px 70px;
+  margin: 0 auto;
+  padding: 50px 71px 56px 71px;
+  white-space: nowrap;
+  align-items: center;
 }
 
+.sorting-type {
+  margin-right: auto;
+}
+
+
 .button-select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: rgba(255, 255, 255, 0);
   color: #000000;
-  min-width: 16px;
-  min-height: 14px;
+  width: 48px;
+  height: 48px;
   margin-right: 8px;
-  margin-bottom: 8px;
-  border: solid 2px;
+  border: solid 2px #E5E5E5;
+}
+
+.button-select svg {
+  fill: #000000;
+}
+
+.button-select-current {
+  border: solid 2px #000000;
+}
+
+.button-select:hover,
+.button-select:active  {
+  border: solid 2px #000000;
+}
+
+.button-select:focus {
+  border: solid 2px #68A2CA;
 }
 
 .button-select:last-child {
@@ -727,20 +757,34 @@ body {
 }
 
 .pagination-link {
-  display: block;
-  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 60px;
   height: 60px;
-  padding: 12px 24px;
+  border-radius: 4px;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
   color: #ffffff;
   background-color: #82B3D3;
   text-decoration: none;
+  align-self: center;
 }
 
-.pagination-link-current {
+.pagination-link:hover,
+.pagination-link:focus {
+  background-color: #68A2CA;
+}
+
+.pagination-link:active {
+  color: #ffffff 30%;
+}
+
+.pagination-link-current,
+.pagination-link-current:hover,
+.pagination-link-current:focus,
+.pagination-link-current:active {
   color: #000000;
   background-color: #F2F2F2;
 }
@@ -773,7 +817,7 @@ body {
   padding: 0;
   column-gap: 18px;
   list-style-type: none;
-  align-items: center;
+  justify-items: center;
 }
 
 .hotel-card {
@@ -783,6 +827,7 @@ body {
   column-gap: 20px;
   row-gap: 16px;
   margin: 0;
+  padding:0;
   min-height: 438px;
   justify-items: start;
 }
