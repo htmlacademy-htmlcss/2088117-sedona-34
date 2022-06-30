@@ -18,6 +18,19 @@ html {
   height: 100%;
 }
 
+
+.width-container {
+  width: 1280px;
+  background-color: #F2F2F2;
+}
+
+.shadow-container {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+}
+
 body {
   margin: 0;
   display: flex;
@@ -82,11 +95,26 @@ body {
 }
 
 .favorite-header {
+  position: relative;
   background-image: url('../images/icons/favorite.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
 
+.favorite-header::after {
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  content: 12;
+  font-family: 'PT Sans';
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #7DB54F;
+}
 
 .navigation-logo {
   display: block;
@@ -186,6 +214,16 @@ body {
   padding: 9px 15px 8px 15px;
 }
 
+.product-card-button:hover,
+.product-card-button:focus {
+  background-color: #615048;
+}
+
+.product-card-button:active {
+  background-color: #615048;
+  color: #ffffff 30%;
+}
+
 .product-card-choose {
   font-size: 16px;
   line-height: 20px;
@@ -197,11 +235,22 @@ body {
   padding: 9px 15px 8px 15px;
 }
 
+.product-card-choose:hover,
+.product-card-choose:focus {
+  background-color: #68A2CA;
+}
+
+.product-card-chosen:active {
+  background-color: #68A2CA;
+  color: #ffffff 30%;
+}
+
 .hotel-card-stars {
   display: flex;
   list-style-type: none;
   margin: 0;
   padding: 0;
+  align-items: center;
   grid-column: 1/2;
   grid-row: 5/6;
 }
@@ -218,8 +267,24 @@ body {
 
 }
 
+.product-card-chosen:hover,
+.product-card-chosen:focus {
+  background-color: #6C9E42;
+}
+
+.product-card-chosen:active {
+  background-color: #7DB54F;
+  color: #ffffff 30%;
+}
+
+.product-card-chosen:disabled,
+.product-card-choose:disabled,
+.product-card-choose:disabled {
+  background-color: #E5E5E5;
+}
+
+
 .navigation-link {
-  position: relative;
   display: block;
   padding: 20px 17px;
   font-size: 20px;
@@ -230,15 +295,20 @@ body {
   margin: 0;
 }
 
-.navigation-link-current::before{
-     position: absolute;
-     bottom: 0;
-    height: 20px;
-    background-color: #756257;
-    content: "";
-  }
+.navigation-link-current {
+  position: relative;
+}
+
+.navigation-link-current::before {
+  position: absolute;
+  bottom: -20px;
+  height: 4px;
+  background-color: #756257;
+  content: "";
+}
 
 .welcome {
+  position: relative;
   background-image: url("../images/index-background.jpg");
   background-color: rgb(28, 61, 83);
   background-size: 100% auto;
@@ -247,9 +317,12 @@ body {
 }
 
 .welcome::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
   content: url('../images/icons/divider.svg');
-  position: relative;
-  bottom: 56px;
+  padding: 0;
+  margin-bottom: -4px;
 }
 
 .content-title {
@@ -513,10 +586,6 @@ body {
   margin-right: 0;
 }
 
-.footer-social-item:nth-child(3n) {
-  margin-right: 0;
-}
-
 .footer-number {
   width: 720px;
   font-size: 40px;
@@ -528,10 +597,35 @@ body {
   text-decoration: none;
 }
 
+.footer-number a:hover,
+.footer-number a:focus {
+  color: #756157;
+  text-decoration: none;
+}
+
+footer-number a:active {
+  color: #756157 30%;
+  text-decoration: none;
+}
+
 .footer-html {
   width: 130px;
   margin-right: 70px;
 }
+
+.logo-html {
+  fill: #000000;
+}
+
+.logo-html:hover,
+.logo-html:focus {
+  fill: #756157;
+}
+
+.logo-html:active {
+  fill: #756157 30%;
+}
+
 
 .field {
   font-family: "PT Sans", sans-serif;
@@ -593,9 +687,9 @@ body {
 
 .breadcrumbs-item {
   position: relative;
-  margin: 0 0 0 20px;
+  margin: 0;
+  margin-right: 20px;
   padding: 0;
-
 }
 
 .breadcrumbs-link {
@@ -604,34 +698,60 @@ body {
   font-size: 16px;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
-.hotel {
-  background-image: url(../images/icons/hotel-icon.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 0%;
-  width: 14px;
-  height: 14px;
-  margin: 0;
-  margin-right: 10px;
-  padding: 0;
+
+.breadcrumbs-link:hover {
+  color: #ffffff 60%;
 }
 
-.hotel::after {
+.breadcrumbs-link:focus {
+  color: #ffffff;
+}
+
+.breadcrumbs-link:hover {
+  color: #ffffff 30%;
+}
+
+
+.hotel-icon {
+  fill: #ffffff;
+}
+
+.hotel-icon:hover {
+  fill: #ffffff 60%;
+}
+
+.hotel-icon:focus {
+  fill: #ffffff;
+}
+
+.hotel-icon:active v {
+  fill: #ffffff 30%;
+}
+
+.breadcrumbs-item::after {
   position: absolute;
-  top: -5px;
-  left: 24px;
+  top: 0;
+  left: 20px;
   content: url(../images/icons/white-arrow.svg);
   margin-right: 10px;
   padding: 0;
 }
 
-.filter-wrap {
-  display: flex;
-
+.breadcrumbs-item:last-child::after {
+  content: none;
 }
 
+.filter-wrap {
+  display: flex;
+}
+
+
 .catalog-filter {
+  margin: 0;
+  padding: 0;
   margin-right: 70px;
 }
 
@@ -644,7 +764,7 @@ body {
 .sorting-container {
   display: flex;
   flex-direction: column;
-  background-image: url("../images/catalog/filter-background.jpg");
+  background-image: url("../images/catalog/filter-background.png");
   background-color: rgb(28, 61, 83);
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -687,7 +807,7 @@ body {
 }
 
 .button-select:hover,
-.button-select:active  {
+.button-select:active {
   border: solid 2px #000000;
 }
 
@@ -737,9 +857,12 @@ body {
   line-height: 20px;
   font-weight: 400;
   background-color: #F2F2F2;
+  border-radius: 4px;
   grid-column: 2/3;
   grid-row: 5/6;
   margin: 0;
+  min-width: 140px;
+  padding: 9px 0;
 }
 
 .filter-field {
@@ -827,7 +950,7 @@ body {
   column-gap: 20px;
   row-gap: 16px;
   margin: 0;
-  padding:0;
+  padding: 0;
   min-height: 438px;
   justify-items: start;
 }
@@ -841,20 +964,35 @@ body {
 
 
 .pagination {
+  position: relative;
   display: flex;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-.footer-social-icon {
+.pagination::before {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
+  top: 30px;
+  left: 65px;
+  width: 1055px;
+  background-color: rgba(230, 230, 230, 1);
+  border: 100px;
+  contain: "";
+}
+
+
+.footer-social-icon {
   fill: #83B3D3;
+}
+
+.footer-social-icon:hover,
+.footer-social-icon:focus {
+  fill: #68A2CA;
+}
+
+.footer-social-icon:active {
+  fill: #68A2CA 30%;
 }
 
 .star {
