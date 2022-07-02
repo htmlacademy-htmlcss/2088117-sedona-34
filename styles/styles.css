@@ -22,6 +22,7 @@ html {
 .width-container {
   width: 1280px;
   background-color: #F2F2F2;
+  margin: 0 auto;
 }
 
 .shadow-container {
@@ -84,6 +85,7 @@ body {
 }
 
 .navigation-item {
+  position: relative;
   margin: 0;
   padding: 0;
 }
@@ -94,6 +96,7 @@ body {
   background-position: center;
 }
 
+
 .favorite-header {
   position: relative;
   background-image: url('../images/icons/favorite.svg');
@@ -101,22 +104,35 @@ body {
   background-position: center;
 }
 
-.favorite-header::after {
+.favorite {
+  position: relative;
+}
+
+.favorite-header::before {
   position: absolute;
-  top: 100%;
-  left: 100%;
-  content: 12;
+  top: 15px;
+  left: 24px;
+  content:"";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #7DB54F;
+ }
+
+ .favorite-header::after {
+  position: absolute;
+  top: 18px;
+  left: 28px;
+  content:"12";
   font-family: 'PT Sans';
   font-weight: 400;
   font-size: 10px;
   line-height: 13px;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background-color: #7DB54F;
-}
+  color: #ffffff;
+ }
 
 .navigation-logo {
+  z-index: 20;
   display: block;
   margin-left: 70px;
   margin-bottom: -5px;
@@ -162,6 +178,9 @@ body {
 
 .newsletter-button {
   background-color: #82B3D3;
+  border-radius: 0 10px 10px 0;
+  width: 200px;
+  white-space: nowrap;
 }
 
 .visually-hidden {
@@ -221,7 +240,7 @@ body {
 
 .product-card-button:active {
   background-color: #615048;
-  color: #ffffff 30%;
+  color: rgb(255, 255, 255, 0.3);
 }
 
 .product-card-choose {
@@ -242,7 +261,7 @@ body {
 
 .product-card-chosen:active {
   background-color: #68A2CA;
-  color: #ffffff 30%;
+  color: rgb(255, 255, 255, 0.3);
 }
 
 .hotel-card-stars {
@@ -274,7 +293,7 @@ body {
 
 .product-card-chosen:active {
   background-color: #7DB54F;
-  color: #ffffff 30%;
+  color: rgb(255, 255, 255, 0.3);
 }
 
 .product-card-chosen:disabled,
@@ -285,6 +304,7 @@ body {
 
 
 .navigation-link {
+  position: relative;
   display: block;
   padding: 20px 17px;
   font-size: 20px;
@@ -295,16 +315,15 @@ body {
   margin: 0;
 }
 
-.navigation-link-current {
-  position: relative;
-}
-
-.navigation-link-current::before {
+.navigation-link-current::after {
   position: absolute;
-  bottom: -20px;
-  height: 4px;
+  right: 17px;
+  bottom: -1px;
+  left: 17px;
+  height: 2px;
   background-color: #756257;
   content: "";
+  z-index: 100;
 }
 
 .welcome {
@@ -604,7 +623,7 @@ body {
 }
 
 footer-number a:active {
-  color: #756157 30%;
+  color: rgb(117, 97, 87, 0.3);
   text-decoration: none;
 }
 
@@ -623,7 +642,7 @@ footer-number a:active {
 }
 
 .logo-html:active {
-  fill: #756157 30%;
+  fill: rgb(117, 97, 87, 0.3);
 }
 
 
@@ -703,7 +722,7 @@ footer-number a:active {
 
 
 .breadcrumbs-link:hover {
-  color: #ffffff 60%;
+  color: rgb(255, 255, 255, 0.6);
 }
 
 .breadcrumbs-link:focus {
@@ -711,7 +730,7 @@ footer-number a:active {
 }
 
 .breadcrumbs-link:hover {
-  color: #ffffff 30%;
+  color: rgb(255, 255, 255, 0.3);
 }
 
 
@@ -720,15 +739,15 @@ footer-number a:active {
 }
 
 .hotel-icon:hover {
-  fill: #ffffff 60%;
+  fill: rgb(255, 255, 255, 0.6);
 }
 
 .hotel-icon:focus {
   fill: #ffffff;
 }
 
-.hotel-icon:active v {
-  fill: #ffffff 30%;
+.hotel-icon:active {
+  fill: rgb(255, 255, 255, 0.3);
 }
 
 .breadcrumbs-item::after {
@@ -901,7 +920,7 @@ footer-number a:active {
 }
 
 .pagination-link:active {
-  color: #ffffff 30%;
+  color: rgb(255, 255, 255, 0.3);
 }
 
 .pagination-link-current,
@@ -973,12 +992,13 @@ footer-number a:active {
 
 .pagination::before {
   position: absolute;
-  top: 30px;
-  left: 65px;
+  display: block;
+  top: -30px;
+  left: 0;
   width: 1055px;
-  background-color: rgba(230, 230, 230, 1);
-  border: 100px;
-  contain: "";
+  background-color: #E6E6E6;
+  height: 1px;
+  content: "";
 }
 
 
@@ -992,7 +1012,7 @@ footer-number a:active {
 }
 
 .footer-social-icon:active {
-  fill: #68A2CA 30%;
+  fill: rgb(104, 162, 202, 0.3);
 }
 
 .star {
