@@ -622,6 +622,7 @@ body {
   line-height: 40px;
 }
 
+
 .footer-number a {
   color: #000000;
   text-decoration: none;
@@ -633,7 +634,7 @@ body {
   text-decoration: none;
 }
 
-footer-number a:active {
+.footer-number a:active {
   color: rgb(117, 97, 87, 0.3);
   text-decoration: none;
 }
@@ -643,16 +644,16 @@ footer-number a:active {
   margin-right: 70px;
 }
 
-.logo-html {
+ .logo-link .logo-html {
   fill: #000000;
 }
 
-.logo-html:hover,
-.logo-html:focus {
+.logo-link:hover .logo-html,
+.logo-link:focus .logo-html {
   fill: #756157;
 }
 
-.logo-html:active {
+.logo-link:active .logo-html {
   fill: rgb(117, 97, 87, 0.3);
 }
 
