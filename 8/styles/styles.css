@@ -183,6 +183,7 @@ body {
   white-space: nowrap;
 }
 
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -198,7 +199,6 @@ body {
 
 .button-social {
   position: relative;
-  color: #000000;
   background-color: #ffffff;
 }
 
@@ -233,11 +233,17 @@ body {
   padding: 9px 15px 8px 15px;
 }
 
+.button-header:hover,
+.button-header:focus,
+.find-hotel-index:hover,
+.find-hotel-index:focus,
 .product-card-button:hover,
 .product-card-button:focus {
   background-color: #615048;
 }
 
+.button-header:active,
+.find-hotel-index:active,
 .product-card-button:active {
   background-color: #615048;
   color: rgb(255, 255, 255, 0.3);
@@ -254,11 +260,17 @@ body {
   padding: 9px 15px 8px 15px;
 }
 
+.button-choose:hover,
+.button-choose:focus,
+.newsletter-button:hover,
+.newsletter-button:focus,
 .product-card-choose:hover,
 .product-card-choose:focus {
   background-color: #68A2CA;
 }
 
+.button-choose:active,
+.newsletter-button:active,
 .product-card-chosen:active {
   background-color: #68A2CA;
   color: rgb(255, 255, 255, 0.3);
@@ -296,9 +308,7 @@ body {
   color: rgb(255, 255, 255, 0.3);
 }
 
-.product-card-chosen:disabled,
-.product-card-choose:disabled,
-.product-card-choose:disabled {
+.button:disabled {
   background-color: #E5E5E5;
 }
 
@@ -603,6 +613,7 @@ body {
 
 .footer-social-item:nth-child(3n) {
   margin-right: 0;
+  background-color: #ffffff;
 }
 
 .footer-number {
@@ -610,6 +621,7 @@ body {
   font-size: 40px;
   line-height: 40px;
 }
+
 
 .footer-number a {
   color: #000000;
@@ -622,7 +634,7 @@ body {
   text-decoration: none;
 }
 
-footer-number a:active {
+.footer-number a:active {
   color: rgb(117, 97, 87, 0.3);
   text-decoration: none;
 }
@@ -632,16 +644,16 @@ footer-number a:active {
   margin-right: 70px;
 }
 
-.logo-html {
+.logo-link .logo-html {
   fill: #000000;
 }
 
-.logo-html:hover,
-.logo-html:focus {
+.logo-link:hover .logo-html,
+.logo-link:focus .logo-html {
   fill: #756157;
 }
 
-.logo-html:active {
+.logo-link:active .logo-html {
   fill: rgb(117, 97, 87, 0.3);
 }
 
@@ -1002,18 +1014,21 @@ footer-number a:active {
 }
 
 
-.footer-social-icon {
+.button-social .footer-social-icon {
   fill: #83B3D3;
 }
 
-.footer-social-icon:hover,
-.footer-social-icon:focus {
+.button-social:hover .footer-social-icon,
+.button-social:focus .footer-social-icon {
   fill: #68A2CA;
+  outline: none;
 }
 
-.footer-social-icon:active {
+.button-social:active .footer-social-icon {
   fill: rgb(104, 162, 202, 0.3);
 }
+
+/* Комментарии*/
 
 .star {
   background-image: url('../images/icons/star.svg');
