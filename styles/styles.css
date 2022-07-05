@@ -179,7 +179,7 @@ body {
 .newsletter-button {
   background-color: #82B3D3;
   border-radius: 0 10px 10px 0;
-  width: 200px;
+  min-width: 200px;
   white-space: nowrap;
 }
 
@@ -212,15 +212,38 @@ body {
 }
 
 .button-reset {
+
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   background-color: rgba(131, 179, 211, 0);
   text-transform: capitalize;
-  width: 80px;
-  height: 30px;
+  width: 160px;
+  height: 48px;
   white-space: nowrap;
-  text-align: end;
+  text-align: center;
+  padding: 0;
+  padding-top: 20px;
+}
+
+.button-reset:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/*
+.button-reset:focus {
+  position: absolute;
+  right: 47px;
+  top: 128px;
+  border: solid 3px  #83B3D3;
+border-radius: 4px;
+width: 100px;
+height: 32px;
+}
+*/
+
+.button-reset:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .product-card-button {
@@ -666,6 +689,7 @@ body {
   background-color: #ffffff;
   text-align: left;
   font-weight: 400;
+  padding: 20px 22px;
 }
 
 .hotel-card-title {
@@ -777,6 +801,9 @@ body {
 
 .filter-wrap {
   display: flex;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 
 
@@ -784,6 +811,7 @@ body {
   margin: 0;
   padding: 0;
   margin-right: 70px;
+  border: none;
 }
 
 .catalog-filter-list {
@@ -1037,4 +1065,142 @@ body {
   width: 18px;
   height: 17px;
   margin-right: 6px;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  width: 800px;
+}
+
+.newsletter-email {
+  flex-grow: 1;
+  margin: 0;
+}
+
+.field-email {
+  width: 600px;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  background-color: #F2F2F2;
+}
+
+.range-scale {
+  position: relative;
+  bottom: -30px;
+  height: 4px;
+  margin-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+  width: 288px;
+}
+
+.range-bar {
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.range-toggle:hover {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:focus {
+  border: solid 3px #83b3d3;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:active {
+  border: solid 2px #83b3d3;
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.4);
+}
+
+.toggle-min {
+  top: -8px;
+  left: 0;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
+}
+
+/*
+.cost {
+  margin-bottom: 34px;
+}
+*/
+.range-filter {
+  margin: 0;
+  margin-right: 70px;
+  width: 288px;
+  padding: 0;
+
+}
+
+.range-wrapper-inputs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  max-width: 288px;
+}
+
+.range-input {
+  box-sizing: border-box;
+  width: 144px;
+  height: 48px;
+  padding: 14px 19px;
+  font: inherit;
+  text-align: left;
+  background-color: transparent;
+  border: solid 2px #ffffff;
+  appearance: textfield;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.range-input:hover {
+  border: 2px solid rgb(255, 255, 255, 0.6);
+}
+
+.range-input:focus {
+  box-shadow: 0 0 0 3px #81B3D2;
+}
+
+.range-input:active {
+  background-color: #756257;
+}
+
+
+.range-input-right {
+  border-radius: 4px 0 0 4px;
+}
+
+.range-input-left {
+  border-radius: 0 4px 4px 0;
+}
+
+.buttons-filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
