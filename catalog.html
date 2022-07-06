@@ -76,24 +76,27 @@
               <form class="filter-wrap" action="#" method="get">
                 <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
                 <fieldset class="catalog-filter filter-infra">
-                  <legend class="catalog-filter-title">Инфраструктура</legend>
+                  <legend class="catalog-filter-title">Инфраструктура:</legend>
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="pool" checked>
-                        Бассейн
+                        <input class=" visually-hidden control-input" type="checkbox" name="pool" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Бассейн</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="parking" checked>
-                        Парковка
+                        <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Парковка</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="wi-fi">
-                        Wi-Fi
+                        <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Wi-Fi</span>
                       </label>
                     </li>
                   </ul>
@@ -101,24 +104,29 @@
 
                 <fieldset class="catalog-filter filter-type">
 
-                  <legend class="catalog-filter-title">Тип Жилья</legend>
+                  <legend class="catalog-filter-title">Тип Жилья:</legend>
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="radio" name="hotel-type" value="hotel" checked>
-                        Гостиница
+                        <input class="visually-hidden control-input" type="radio" name="hotel-type" value="hotel"
+                          checked>
+                        <span class="control-mark circle"></span>
+                        <span class="control-label">Гостиница</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="radio" name="hotel-type" value="motel">
-                        Мотель
+                        <input class="visually-hidden control-input" type="radio" name="hotel-type" value="motel">
+
+                        <span class="control-mark circle"></span>
+                        <span class="control-label">Мотель</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="radio" name="hotel-type" value="apartments">
-                        Апартаменты
+                        <input class="visually-hidden control-input" type="radio" name="hotel-type" value="apartments">
+                        <span class="control-mark circle"></span>
+                        <span class="control-label">Апартаменты</span>
                       </label>
                     </li>
                   </ul>
@@ -163,9 +171,12 @@
               <h2 class="content-title found">Найдено гостиниц: 38</h2>
               <div class="sorting-type">
                 <select class="filter-field" aria-label="Сортировка">
-                  <option value="cheap">Сначала дешёвые</option>
-                  <option value="popular">Сначала популярные</option>
-                  <option value="expensive">Сначала дорогие</option>
+                  <option value="cheap">Сначала дешёвые
+                  </option>
+                  <option value="popular">Сначала популярные
+                  </option>
+                  <option value="expensive">Сначала дорогие
+                  </option>
                 </select>
               </div>
               <a class=" button-select button-select-current show-cards" href="#">
