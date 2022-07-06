@@ -40,7 +40,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  color: #000000;
+  color: #333333;
   background-color: #ffffff;
   text-align: center;
 }
@@ -916,15 +916,6 @@ body {
   padding: 9px 0;
 }
 
-.filter-field {
-  font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  line-height: 21px;
-  color: #000000;
-  background-color: #ffffff;
-  text-align: left;
-  font-weight: 400;
-}
 
 .pagination-item:not(:last-child) {
   margin-right: 8px;
@@ -971,7 +962,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  color: #000000;
+  color: #333333;
   background-color: #ffffff;
   text-align: left;
   font-weight: 400;
@@ -979,7 +970,7 @@ body {
 
 .pagination-wrap {
   display: flex;
-  margin: 0 73px;
+  margin: 0 72px;
   justify-content: space-between;
 }
 
@@ -1314,4 +1305,20 @@ legend {
   background-image: url("../images/icons/grey-arrow.svg");
   background-repeat: no-repeat;
   background-position: right 16px center;
+}
+
+.select-page-view {
+  margin-left: 51px;
+  width: 160px;
+  padding: 14px 20px;
+  font: inherit;
+  font-weight: 400;
+  background-color: #ffffff;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  color: #333333;
+  background-image: url("../images/icons/black-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  appearance: none;
 }
