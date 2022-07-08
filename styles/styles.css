@@ -132,7 +132,7 @@ body {
 }
 
 .navigation-logo {
-  z-index: 20;
+  z-index: 2;
   display: block;
   margin-left: 70px;
   margin-bottom: -5px;
@@ -352,7 +352,7 @@ body {
   height: 2px;
   background-color: #756257;
   content: "";
-  z-index: 100;
+  z-index: 2;
 }
 
 .welcome {
@@ -1077,6 +1077,30 @@ body {
   width: 288px;
 }
 
+.range-scale::before {
+  position: absolute;
+  content: "от";
+  top: -67px;
+  left: 115px;
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 0.3)
+}
+
+.range-scale::after {
+  position: absolute;
+  content: "до";
+  top: -67px;
+  left: 254px;
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 0.3)
+}
+
 .range-bar {
   position: absolute;
   bottom: 0;
@@ -1330,6 +1354,7 @@ legend {
   width: 100%;
   height: 100%;
   background-color: rgb(242, 242, 242, 0.8);
+  z-index: 3;
 }
 
 .modal {
@@ -1347,23 +1372,41 @@ legend {
 }
 
 .modal-close-button {
-  position: absolute;
-  padding: 0;
   top: 54px;
   right: 70px;
   width: 53px;
   height: 53px;
   border-radius: 50%;
-  background-color: #F2F2F2;
+}
+
+.modal-close-button:hover,
+.modal-close-button:active {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:focus {
+  border: solid 3px #83B3D3;
+}
+
+.modal-close-button svg {
+  fill: #000000;
+}
+
+.modal-close-button:active svg {
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+.modal-button {
+  position: absolute;
+  padding: 0;
   border: none;
-  background-image: url("../images/icons/cross.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: #F2F2F2;
   cursor: pointer;
 }
 
 .modal-title {
   text-align: left;
+  margin-bottom: 63px;
 }
 
 .button-find {
@@ -1372,15 +1415,50 @@ legend {
   padding: 12px 26px;
 }
 
+.button-find:hover {
+  background-color: #68A2CA;
+  ;
+}
+
+.button-find:focus {
+  border: solid 3px #756257;
+}
+
+.button-find:active {
+  color: rgb(255, 255, 255, 0.3);
+}
+
 .field-group {
   padding: 0;
 }
 
-.modal-row {
+.field-people + .children {
+  margin-right: 56px;
+}
 
+.field-modal:hover,
+.field-people:hover {
+  background-color: #E6E6E6;
+}
+
+.field-modal:focus,
+.field-people:focus {
+  border: solid 3px #83B3D3;
+}
+
+.field-modal:active,
+.field-people:active {
+  background-color: #ffffff;
+  border: solid 2px #000000;
+}
+
+
+.modal-row {
   width: 575px;
   display: flex;
+  margin: 0;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .field-modal {
@@ -1388,15 +1466,133 @@ legend {
   box-sizing: border-box;
   width: 420px;
   border-radius: 4px;
+  background-image: url("../images/icons/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: 386px;
+  cursor: pointer;
+  padding: 14px 19px;
+  color: #000000;
+}
+
+.field-people {
+  position: relative;
+  box-sizing: border-box;
+  width: 133px;
+  border-radius: 4px;
+  text-align: center;
+  padding: 15px;
+
+}
+
+
+.field-people::-webkit-outer-spin-button,
+.field-people::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .check-in-date {
-  margin-right: 42px;
+  margin-right: 36px;
+  white-space: nowrap;
 }
 
-.field-modal::before {
+.check-out-date {
+  margin-right: 30px;
+  white-space: nowrap;
+}
+
+.adults {
+  margin-right: 58px;
+}
+
+.children {
+  margin-right: 43px;
+}
+
+/*
+.modal-info {
+  margin-top: 11px;
+  margin-left: 155px;
+  margin-bottom: 11px;
+  text-align: left;
+}
+
+.error {
+  color: #FF5757;
+}
+*/
+
+.second-row {
+  position: relative;
+  padding: 0;
+}
+
+.second-row::after {
   position: absolute;
-  top: 18px;
-  right: 17px;
-  content: "url(../images/icons/calendar.svg)";
+  content: "На эти даты есть свободные номера. Пока есть.";
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  top: 56px;
+  left: 155px;
+  color: #333333;
+}
+
+
+.first-row {
+  position: relative;
+  padding: 0;
+}
+
+.first-row::after {
+  position: absolute;
+  content: "Мы не можем отправить вас в прошлое.";
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  top: 56px;
+  left: 155px;
+  color: #FF5757;
+}
+
+.decrease-adults {
+  top: 25px;
+  left: 170px;
+  width: 13px;
+  height: 1px;
+  background-image: url("../images/icons/menos.svg");
+  background-position: center;
+  z-index: 4;
+}
+
+.increase-adults {
+  top: 19px;
+  left: 257px;
+  width: 13px;
+  height: 13px;
+  background-image: url("../images/icons/plus.svg");
+  background-position: center;
+  z-index: 4;
+}
+
+.decrease-children {
+  top: 25px;
+  left: 112px;
+  width: 13px;
+  height: 1px;
+  background-image: url("../images/icons/menos.svg");
+  background-position: center;
+  z-index: 4;
+}
+
+.increase-children {
+  top: 19px;
+  left: 199px;
+  width: 13px;
+  height: 13px;
+  background-image: url("../images/icons/plus.svg");
+  background-position: center;
+  z-index: 4;
 }
