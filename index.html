@@ -252,34 +252,56 @@
           <p class="modal-info">На эти даты есть свободные номера. Пока есть.</p>
 -->
             <div class="modal-row">
-              <p class="navigation-link field-group menos-row">
-                <label class="form-label adults" for="adults">
-                  Взрослые:</label>
-                <button class="modal-button decrease-adults">
-                  <span class="visually-hidden">Уменьшить</span>
-                </button>
-                <input class="field field-people" type="text" id="adults" name="adults" placeholder="2">
-                <button class="modal-button increase-adults">
-                  <span class="visually-hidden">Увеличить</span>
-                </button>
-              </p>
-              <p class=" navigation-link field-group ">
-                <label class="form-label children" for="check-in-date">
-                  Дети:</label>
-                <button class="modal-button decrease-children">
+              <div class="adults-left">
+                <p class="navigation-link field-group menos-row">
+                  <label class="form-label adults">
+                    Взрослые:</label>
+                  <button class="modal-button modal-button-number decrease-adults">
+                    <span class="visually-hidden">Уменьшить</span>
+                    <svg class="menos" aria-hidden="true" focusable="false" width="13" height="1"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0v1h13V0H0Z" />
+                    </svg>
+                  </button>
+                  <input class="field field-people" type="number" value="2" name="adults">
+                  <button class="modal-button modal-button-number increase-adults">
+                    <span class="visually-hidden">Увеличить</span>
+                    <svg aria-hidden="true" focusable="false" width="13" height="13" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
+                    </svg>
+                  </button>
+                </p>
+              </div>
+              <p class=" navigation-link field-group">
+                <span class="form-label form-label-icon">
+                  <label class="form-label children">
+                    Дети:</label>
+                </span>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                    <svg class="toggle-info" aria-hidden="true" focusable="false" width="1" height="9"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z" />
+                    </svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с
+                    вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+                <button class="modal-button modal-button-number decrease-children">
                   <!--  <img src="images/icons/menos.svg"> -->
                   <span class="visually-hidden">Уменьшить</span>
-                  <!--
-                  <svg class="menos" aria-hidden="true" focusable="false" width="13" height="1" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity=".3" d="M0 0v1h13V0H0Z">
-                 </svg>
--->
-
+                  <svg class="menos" aria-hidden="true" focusable="false" width="13" height="1"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0v1h13V0H0Z" />
+                  </svg>
                 </button>
 
                 <input class="field field-people" type="number" value="1" name="children">
-                <button class="modal-button increase-children">
+                <button class="modal-button modal-button-number increase-children">
                   <span class="visually-hidden">Увеличить</span>
+                  <svg aria-hidden="true" focusable="false" width="13" height="13" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
+                  </svg>
                 </button>
               </p>
             </div>

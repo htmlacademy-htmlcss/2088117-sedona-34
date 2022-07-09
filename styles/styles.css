@@ -1432,9 +1432,12 @@ legend {
   padding: 0;
 }
 
-.field-people + .children {
+/*
+
+.adults-left{
   margin-right: 56px;
 }
+*/
 
 .field-modal:hover,
 .field-people:hover {
@@ -1557,42 +1560,132 @@ legend {
   color: #FF5757;
 }
 
-.decrease-adults {
-  top: 25px;
-  left: 170px;
-  width: 13px;
-  height: 1px;
-  background-image: url("../images/icons/menos.svg");
-  background-position: center;
+.modal-button-number {
+  background-color: transparent;
+  width: 25px;
+  height: 25px;
   z-index: 4;
+}
+
+.decrease-adults {
+  top: 13px;
+  left: 170px;
 }
 
 .increase-adults {
-  top: 19px;
-  left: 257px;
-  width: 13px;
-  height: 13px;
-  background-image: url("../images/icons/plus.svg");
-  background-position: center;
-  z-index: 4;
+  top: 13px;
+  left: 247px;
+  padding: 6px;
 }
 
 .decrease-children {
-  top: 25px;
+  top: 13px;
   left: 112px;
-  width: 13px;
-  height: 1px;
-  background-image: url("../images/icons/menos.svg");
-  background-position: center;
-  z-index: 4;
+}
+
+.menos {
+  display: block;
+  margin: 12px 6px;
 }
 
 .increase-children {
-  top: 19px;
-  left: 199px;
-  width: 13px;
-  height: 13px;
-  background-image: url("../images/icons/plus.svg");
-  background-position: center;
-  z-index: 4;
+  top: 13px;
+  left: 189px;
+  padding: 6px;
 }
+
+
+.modal-button-number svg {
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+.modal-button-number:hover svg,
+.modal-button-number:focus svg {
+  fill: #000000;
+}
+
+.modal-button-number:focus {
+  box-sizing: border-box;
+  border: solid 3px #83B3D3;
+  border-radius: 4px;
+}
+
+.modal-button-number:active svg {
+  fill: rgba(0, 0, 0, 0.2);
+}
+
+
+.tooltip {
+  position: absolute;
+  top: 13px;
+  left: 55px;
+  width: 25px;
+  height: 25px;
+  z-index: 5;
+}
+
+.tooltip-toggle {
+  border: none;
+  background-color: #83B3D3;
+  padding: 0;
+  margin: 0;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%
+}
+
+.tooltip-toggle svg {
+  fill: #ffffff;
+}
+
+.tooltip-toggle:hover {
+  background-color: #68A2CA;
+}
+
+.tooltip-text {
+  width: 256px;
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: none;
+  padding: 15px 22px 18px 18px;
+  border-radius: 10px;
+  display: block;
+  box-shadow: 0 15px 30px 0 rgb(0, 0, 0, 0.3);
+  text-align: left;
+  box-sizing: border-box;
+  position: absolute;
+  top: 100%;
+  margin-top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+
+.tooltip-text:after {
+  content: '';
+  background-image: url("../images/icons/tooltip-arrow.svg");
+  width: 19px;
+  height: 9px;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
+/*
+.form-label-icon {
+  position: relative;
+  padding-right: 25px;
+}
+*/
