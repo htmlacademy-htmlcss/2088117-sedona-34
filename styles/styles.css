@@ -57,9 +57,12 @@ body {
 }
 
 .page-header {
+  box-sizing: border-box;
   display: flex;
   width: 1200px;
   margin: 0 auto;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 .navigation-list {
@@ -73,7 +76,7 @@ body {
 }
 
 .navigation-user {
-  max-width: 264px;
+  width: 264px;
   margin-left: auto;
   align-self: start;
 }
@@ -133,10 +136,13 @@ body {
 }
 
 .navigation-logo {
-  z-index: 2;
-  display: block;
-  margin-left: 70px;
+   display: block;
+  margin-right: 30px;
   margin-bottom: -5px;
+}
+
+.navigation-logo-image {
+  z-index: 2;
 }
 
 
@@ -169,7 +175,7 @@ body {
 .button-header {
   font-size: 16px;
   line-height: 20px;
-  width: 130px;
+  width: 160px;
   padding: 8px 15px;
   margin-top: 14px;
   margin-bottom: 14px;
@@ -201,6 +207,8 @@ body {
 .button-social {
   position: relative;
   background-color: #ffffff;
+  width: 47px;
+  height: 40px;
 }
 
 .button-choose {
@@ -391,6 +399,8 @@ body {
 
 .five-reasons {
   margin-bottom: 31px;
+  padding-left: 17px;
+  padding-right: 17px;
 }
 
 .five-reasons-text {
@@ -433,7 +443,12 @@ body {
   grid-row: 2/3;
 }
 
+.living {
+  margin-top: 102px;
+}
+
 .apartment::before {
+  height: 72px;
   content: url('../images/icons/house.svg');
   margin-bottom: 30px;
 }
@@ -444,6 +459,7 @@ body {
 }
 
 .food::before {
+  height: 72px;
   content: url('../images/icons/food.svg');
   margin-bottom: 30px;
 }
@@ -454,6 +470,7 @@ body {
 }
 
 .souvenir::before {
+  height: 72px;
   content: url('../images/icons/present.svg');
   margin-bottom: 30px;
 }
@@ -513,6 +530,7 @@ body {
 
 .second-row {
   padding: 80px 85px;
+  align-self: end;
 }
 
 .forth-row {
@@ -564,7 +582,7 @@ body {
 .choose-hotel {
   font-size: 22px;
   line-height: 26px;
-  padding: 92px 313px;
+  padding: 92px 304px;
 }
 
 .interest {
@@ -578,7 +596,7 @@ body {
 }
 
 .find-hotel-index {
-  width: 544px;
+  width: 574px;
   padding: 12px 15px;
 }
 
@@ -611,6 +629,7 @@ body {
   justify-content: space-between;
   padding-top: 40px;
   padding-bottom: 30px;
+  align-items: center;
 }
 
 .footer-social-list {
@@ -620,6 +639,8 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  align-items: center;
+  align-content: center;
 }
 
 .footer-social {
@@ -630,7 +651,8 @@ body {
   min-width: 47px;
   min-height: 40px;
   margin: 0;
-  margin-bottom: 11px;
+  align-self: center;
+
 }
 
 .footer-social-item:nth-child(3n) {
@@ -664,8 +686,15 @@ body {
 }
 
 .footer-html {
-  width: 130px;
+  width: 115px;
   margin-right: 70px;
+  align-self: center;
+  padding: 8px 0;
+}
+
+
+.logo-link {
+ padding: 8px 0;
 }
 
 .logo-link .logo-html {
@@ -679,6 +708,11 @@ body {
 
 .logo-link:active .logo-html {
   fill: rgb(117, 97, 87, 0.3);
+}
+
+.logo-html {
+  top: 50%;
+  left: 50%;
 }
 
 
@@ -858,10 +892,8 @@ flex-wrap: wrap;
 }
 
 .found {
-display: flex;
-flex-wrap: wrap;
 max-width: 338px;
-
+word-wrap:break-word;
 }
 
 .button-select {
@@ -1039,6 +1071,7 @@ max-width: 338px;
   height: 1px;
   content: "";
 }
+
 
 
 .button-social .footer-social-icon {
