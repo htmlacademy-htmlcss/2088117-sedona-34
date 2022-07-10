@@ -143,7 +143,7 @@
             <section class="subscribe subscribe-main">
               <h2 class="content-title content-title-subscribe">Подпишитесь на рассылку</h2>
               <p class="text-subscribe">Только полезная информация и никакого спама, честное бойскаутское!</p>
-              <form class="newsletter-form" action="#" method="post">
+              <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
 
                 <label for="newsletter-email" class="visually-hidden">Email</label>
                 <input class="field field-email" placeholder="Ваш e-mail" type="email" name="newsletter-email"
@@ -165,7 +165,7 @@
               <h2 class="visually-hidden">Социальные сети</h2>
               <ul class="footer-social-list">
                 <li class="footer-social-item">
-                  <a class="button button-social" href="https://vk.com/htmlacademy">
+                  <a class="button button-social"  href="https://vk.com/htmlacademy">
                     <svg class="footer-social-icon" aria-hidden="true" focusable="false" width="24" height="15"
                       xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd"
@@ -217,7 +217,7 @@
 
     <div class="modal-container">
       <div class="modal modal-find-hotel">
-        <button class="modal-button modal-close-button">
+        <button class="modal-button modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
           <svg class="cross" aria-hidden="true" focusable="false" width="13" height="13"
             xmlns="http://www.w3.org/2000/svg">
@@ -228,35 +228,34 @@
         <section class="modal-content">
           <h2 class="content-title five-reasons modal-title">Поиск гостиницы в Седоне</h2>
 
-          <form class="find-hotel-form" action="#" method="post">
-            <div class="modal-row first-row">
-              <p class="navigation-link field-group">
+          <form class="find-hotel-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="modal-row first-modal-row navigation-link field-group">
+
                 <label class="form-label check-in-date" for="check-in-date">
                   Дата Заезда:</label>
                 <input class="field field-modal" type="text" id="check-in-date" name="check-in-date"
                   placeholder="27 апреля 2020">
-              </p>
+
             </div>
             <!--
             <p class="error modal-info">Мы не можем отправить вас в прошлое.</p>
 -->
-            <div class="modal-row second-row">
-              <p class="navigation-link field-group">
+            <div class="modal-row second-modal-row navigation-link field-group">
+
                 <label class="form-label check-out-date" for="check-out-date">
                   Дата Выезда:</label>
                 <input class="field field-modal" type="text" id="check-out-date" name="check-out-date"
                   placeholder="1 сентября 2021">
-              </p>
+
             </div>
             <!--
           <p class="modal-info">На эти даты есть свободные номера. Пока есть.</p>
 -->
-            <div class="modal-row">
-              <div class="adults-left">
-                <p class="navigation-link field-group menos-row">
+            <div class="modal-row third-modal-row">
+                <div class="navigation-link field-group menos-row adults-left">
                   <label class="form-label adults">
                     Взрослые:</label>
-                  <button class="modal-button modal-button-number decrease-adults">
+                  <button class="modal-button modal-button-number decrease-adults" type="button">
                     <span class="visually-hidden">Уменьшить</span>
                     <svg class="menos" aria-hidden="true" focusable="false" width="13" height="1"
                       xmlns="http://www.w3.org/2000/svg">
@@ -264,15 +263,15 @@
                     </svg>
                   </button>
                   <input class="field field-people" type="number" value="2" name="adults">
-                  <button class="modal-button modal-button-number increase-adults">
+                  <button class="modal-button modal-button-number increase-adults" type="button">
                     <span class="visually-hidden">Увеличить</span>
                     <svg aria-hidden="true" focusable="false" width="13" height="13" xmlns="http://www.w3.org/2000/svg">
                       <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
                     </svg>
                   </button>
-                </p>
-              </div>
-              <p class=" navigation-link field-group">
+                </div>
+
+              <div class=" navigation-link field-group adults-left">
                 <span class="form-label form-label-icon">
                   <label class="form-label children">
                     Дети:</label>
@@ -287,7 +286,7 @@
                   <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с
                     вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                 </span>
-                <button class="modal-button modal-button-number decrease-children">
+                <button class="modal-button modal-button-number decrease-children" type="button">
                   <!--  <img src="images/icons/menos.svg"> -->
                   <span class="visually-hidden">Уменьшить</span>
                   <svg class="menos" aria-hidden="true" focusable="false" width="13" height="1"
@@ -297,13 +296,13 @@
                 </button>
 
                 <input class="field field-people" type="number" value="1" name="children">
-                <button class="modal-button modal-button-number increase-children">
+                <button class="modal-button modal-button-number increase-children" type="button">
                   <span class="visually-hidden">Увеличить</span>
                   <svg aria-hidden="true" focusable="false" width="13" height="13" xmlns="http://www.w3.org/2000/svg">
                     <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
                   </svg>
                 </button>
-              </p>
+              </div>
             </div>
             <button class="button newsletter-button button-find" type="submit">Найти</button>
           </form>

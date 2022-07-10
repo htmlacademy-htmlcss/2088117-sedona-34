@@ -233,7 +233,7 @@ body {
 
 
 .button-reset:focus {
-  border: solid 3px #83B3D3;
+  outline: solid 3px #83B3D3;
   border-radius: 4px;
 }
 
@@ -855,7 +855,7 @@ body {
   width: 48px;
   height: 48px;
   margin-right: 8px;
-  border: solid 2px #E5E5E5;
+  outline: solid 2px #E5E5E5;
 }
 
 .button-select svg {
@@ -863,16 +863,16 @@ body {
 }
 
 .button-select-current {
-  border: solid 2px #000000;
+  outline: solid 2px #000000;
 }
 
 .button-select:hover,
 .button-select:active {
-  border: solid 2px #000000;
+  outline: solid 2px #000000;
 }
 
 .button-select:focus {
-  border: solid 2px #68A2CA;
+  outline: solid 2px #68A2CA;
 }
 
 .button-select:last-child {
@@ -1123,12 +1123,12 @@ body {
 }
 
 .range-toggle:focus {
-  border: solid 3px #83b3d3;
+  outline: solid 3px #83b3d3;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
 .range-toggle:active {
-  border: solid 2px #83b3d3;
+  outline: solid 2px #83b3d3;
   box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.4);
 }
 
@@ -1170,7 +1170,7 @@ body {
   font: inherit;
   text-align: left;
   background-color: transparent;
-  border: solid 2px #ffffff;
+  outline: solid 2px #ffffff;
   appearance: textfield;
   font-weight: 400;
   font-size: 18px;
@@ -1185,7 +1185,7 @@ body {
 }
 
 .range-input:hover {
-  border: 2px solid rgb(255, 255, 255, 0.6);
+  outline: 2px solid rgb(255, 255, 255, 0.6);
 }
 
 .range-input:focus {
@@ -1234,7 +1234,7 @@ body {
 
 .control-mark:focus {
   background-color: rgb(255, 255, 255, 0.6);
-  border: solid 3px #83B3D3;
+  outline: solid 3px #83B3D3;
 }
 
 .control-mark:active {
@@ -1246,7 +1246,7 @@ body {
 }
 
 .circle:focus {
-  border: solid 3px #83B3D3;
+  outline: solid 3px #83B3D3;
   background-color: #ffffff;
 }
 
@@ -1302,7 +1302,7 @@ legend {
   font: inherit;
   font-weight: 400;
   background-color: #ffffff;
-  border: 2px solid #E5E5E5;
+  outline: 2px solid #E5E5E5;
   border-radius: 4px;
   color: #333333;
   background-image: url("../images/icons/black-arrow.svg");
@@ -1337,7 +1337,7 @@ legend {
   font: inherit;
   font-weight: 400;
   background-color: #ffffff;
-  border: 2px solid #E5E5E5;
+  outline: 2px solid #E5E5E5;
   border-radius: 4px;
   color: #333333;
   background-image: url("../images/icons/black-arrow.svg");
@@ -1385,7 +1385,7 @@ legend {
 }
 
 .modal-close-button:focus {
-  border: solid 3px #83B3D3;
+  outline: solid 3px #83B3D3;
 }
 
 .modal-close-button svg {
@@ -1407,6 +1407,7 @@ legend {
 .modal-title {
   text-align: left;
   margin-bottom: 63px;
+  max-width: 420px;
 }
 
 .button-find {
@@ -1421,7 +1422,7 @@ legend {
 }
 
 .button-find:focus {
-  border: solid 3px #756257;
+  outline: solid 3px #756257;
 }
 
 .button-find:active {
@@ -1446,13 +1447,13 @@ legend {
 
 .field-modal:focus,
 .field-people:focus {
-  border: solid 3px #83B3D3;
+  outline: solid 3px #83B3D3;
 }
 
 .field-modal:active,
 .field-people:active {
   background-color: #ffffff;
-  border: solid 2px #000000;
+  outline: solid 2px #000000;
 }
 
 
@@ -1461,6 +1462,8 @@ legend {
   display: flex;
   margin: 0;
   justify-content: space-between;
+  align-items: center;
+  align-content: center;
   margin-bottom: 40px;
 }
 
@@ -1484,6 +1487,7 @@ legend {
   border-radius: 4px;
   text-align: center;
   padding: 15px;
+  align-self: start;
 
 }
 
@@ -1495,23 +1499,38 @@ legend {
 }
 
 .check-in-date {
+
+  display: inline-block;
   margin-right: 36px;
-  white-space: nowrap;
+  white-space: wrap;
+  max-width: 113px;
 }
 
 .check-out-date {
+  display: inline-block;
   margin-right: 30px;
-  white-space: nowrap;
+  white-space: wrap;
+  max-width: 119px;
 }
 
 .adults {
+  display: inline-block;
   margin-right: 58px;
+  max-width: 93px;
 }
 
 .children {
   margin-right: 43px;
+  max-width: 54px;
+  display: inline-block;
 }
 
+
+.adults-left {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
 /*
 .modal-info {
   margin-top: 11px;
@@ -1525,12 +1544,12 @@ legend {
 }
 */
 
-.second-row {
+.second-modal-row {
   position: relative;
   padding: 0;
 }
 
-.second-row::after {
+.second-modal-row::after {
   position: absolute;
   content: "На эти даты есть свободные номера. Пока есть.";
   font-family: "PT Sans";
@@ -1543,12 +1562,12 @@ legend {
 }
 
 
-.first-row {
+.first-modal-row {
   position: relative;
   padding: 0;
 }
 
-.first-row::after {
+.first-modal-row::after {
   position: absolute;
   content: "Мы не можем отправить вас в прошлое.";
   font-family: "PT Sans";
@@ -1560,6 +1579,10 @@ legend {
   color: #FF5757;
 }
 
+
+.third-modal-row {
+align-items: center;
+}
 .modal-button-number {
   background-color: transparent;
   width: 25px;
@@ -1605,8 +1628,7 @@ legend {
 }
 
 .modal-button-number:focus {
-  box-sizing: border-box;
-  border: solid 3px #83B3D3;
+  outline: solid 3px #83B3D3;
   border-radius: 4px;
 }
 
