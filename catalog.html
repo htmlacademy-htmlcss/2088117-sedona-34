@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Каталог Седона</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="icon" href="./images/icons/favicon.svg"><!-- 32×32 -->
   </head>
 
   <body>
@@ -168,7 +169,12 @@
 
 
             <section class="filters-inner">
-              <h2 class="content-title found">Найдено гостиниц: 38</h2>
+<div class="found">
+  <div></div>
+  <div>
+                <h2 class="content-title">Найдено гостиниц: 38</h2>
+              </div>
+              </div>
               <div class="sorting-type">
                 <select class="filter-field" aria-label="Сортировка">
                   <option value="cheap">Сначала дешёвые
@@ -179,6 +185,7 @@
                   </option>
                 </select>
               </div>
+              <div class="button-select-wrap">
               <a class="button-select button-select-current show-cards" href="#">
                 <svg aria-hidden="true" focusable="false" width="16" height="14" xmlns="http://www.w3.org/2000/svg">
                   <path d="M4 0H0v6h4V0Zm12 0h-4v6h4V0Zm-6 0H6v6h4V0ZM4 8H0v6h4V8Zm12 0h-4v6h4V8Zm-6 0H6v6h4V8Z" />
@@ -198,6 +205,7 @@
                 </svg>
                 <span class="visually-hidden">Показать список</span>
               </a>
+            </div>
             </section>
 
             <ul class="hotel-list">
@@ -285,11 +293,15 @@
                     <a class="pagination-link" href="#">3</a>
                   </li>
                   <li class="pagination-item">
+                    <a class="pagination-link" href="#">4</a>
+                  </li>
+                  <li class="pagination-item">
                     <a class="pagination-link" href="#">...</a>
                   </li>
                   <li class="pagination-item">
                     <a class="pagination-link" href="#">10</a>
                   </li>
+
                 </ul>
               </div>
               <div class="select-page">
