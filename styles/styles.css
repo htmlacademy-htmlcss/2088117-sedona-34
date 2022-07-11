@@ -1492,6 +1492,7 @@ legend {
   text-align: left;
   margin-bottom: 63px;
   max-width: 420px;
+  text-indent: -20px;
 }
 
 .button-find {
@@ -1558,7 +1559,7 @@ legend {
   border-radius: 4px;
   background-image: url("../images/icons/calendar.svg");
   background-repeat: no-repeat;
-  background-position: 386px;
+  background-position: 5px 382px;
   cursor: pointer;
   padding: 14px 19px;
   color: #000000;
@@ -1572,6 +1573,7 @@ legend {
   text-align: center;
   padding: 15px;
   align-self: start;
+
 
 }
 
@@ -1597,12 +1599,12 @@ legend {
 
 .adults {
   display: inline-block;
-  margin-right: 58px;
+  margin-right: 64px;
   max-width: 93px;
 }
 
 .children {
-  margin-right: 43px;
+  margin-right: 50px;
   max-width: 54px;
   display: inline-block;
 }
@@ -1630,6 +1632,7 @@ legend {
 .second-modal-row {
   position: relative;
   padding: 0;
+  margin-bottom: 41px;
 }
 
 .second-modal-row::after {
@@ -1639,7 +1642,7 @@ legend {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-  top: 56px;
+  top: 58px;
   left: 155px;
   color: #333333;
 }
@@ -1657,7 +1660,7 @@ legend {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-  top: 56px;
+  top: 57px;
   left: 155px;
   color: #FF5757;
 }
@@ -1675,18 +1678,18 @@ legend {
 }
 
 .decrease-adults {
-  top: 13px;
-  left: 170px;
+  top: 12px;
+  left: 169px;
 }
 
 .increase-adults {
-  top: 13px;
-  left: 247px;
+  top: 12px;
+  left: 250px;
   padding: 6px;
 }
 
 .decrease-children {
-  top: 13px;
+  top: 12px;
   left: 112px;
 }
 
@@ -1696,8 +1699,8 @@ legend {
 }
 
 .increase-children {
-  top: 13px;
-  left: 189px;
+  top: 12px;
+  left: 192px;
   padding: 6px;
 }
 
@@ -1723,8 +1726,8 @@ legend {
 
 .tooltip {
   position: absolute;
-  top: 13px;
-  left: 55px;
+  top: 15px;
+  left: 54px;
   width: 25px;
   height: 25px;
   z-index: 5;
@@ -1750,24 +1753,23 @@ legend {
 }
 
 .tooltip-text {
-  width: 256px;
+  width: 213px;
   background-color: #333333;
   color: #ffffff;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 21px;
   font-weight: 400;
   text-transform: none;
-  padding: 15px 22px 18px 18px;
+  padding: 15px 24px 23px 18px;
   border-radius: 10px;
   display: block;
   box-shadow: 0 15px 30px 0 rgb(0, 0, 0, 0.3);
   text-align: left;
-  box-sizing: border-box;
   position: absolute;
   top: 100%;
-  margin-top: 6px;
+  margin-top: 14px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-49%);
   display: none;
 }
 
@@ -1778,7 +1780,7 @@ legend {
   height: 9px;
   position: absolute;
   bottom: 100%;
-  left: 0;
+  left: -7px;
   right: 0;
   margin-left: auto;
   margin-right: auto;
