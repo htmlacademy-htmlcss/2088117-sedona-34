@@ -128,7 +128,7 @@ body {
   top: 18px;
   left: 28px;
   content: "12";
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 10px;
   line-height: 13px;
@@ -1154,7 +1154,7 @@ body {
   content: "от";
   top: -62px;
   left: 110px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -1166,7 +1166,7 @@ body {
   content: "до";
   top: -62px;
   left: 252px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -1638,7 +1638,7 @@ legend {
 .second-modal-row::after {
   position: absolute;
   content: "На эти даты есть свободные номера. Пока есть.";
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -1656,7 +1656,7 @@ legend {
 .first-modal-row::after {
   position: absolute;
   content: "Мы не можем отправить вас в прошлое.";
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
