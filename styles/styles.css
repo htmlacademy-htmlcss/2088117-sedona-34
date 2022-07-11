@@ -1770,7 +1770,7 @@ legend {
   margin-top: 14px;
   left: 50%;
   transform: translateX(-49%);
-
+  display: none;
 }
 
 .tooltip-text:after {
