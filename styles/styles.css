@@ -1267,12 +1267,12 @@ body {
   background-color: rgb(255, 255, 255, 0.6);
 }
 
-.control:focus-within .control-mark{
+.control:focus-within .control-mark {
   background-color: rgb(255, 255, 255, 0.6);
   outline: solid 3px #83B3D3;
 }
 
-.control:active .control-mark{
+.control:active .control-mark {
   background-color: rgb(255, 255, 255, 0.3);
 }
 
@@ -1407,7 +1407,7 @@ legend {
 .modal {
   position: relative;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: auto;
   padding: 62px 68px 70px 70px;
   background-color: #ffffff;
