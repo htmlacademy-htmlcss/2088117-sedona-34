@@ -1517,10 +1517,30 @@ legend {
   border-radius: 4px;
   background-image: url("../images/icons/calendar.svg");
   background-repeat: no-repeat;
-  background-position: 5px 382px;
+  background-position: 382px 18px;
   cursor: pointer;
   padding: 14px 19px;
   color: #000000;
+  font-weight: 700;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+}
+
+.field-modal::-webkit-input-placeholder {
+  color: rgb(0, 0, 0, 0.6);
+}
+.[class="field-modal"]::-moz-placeholder {
+  color: #000000;
+  -moz-opacity: 0.6;
+}
+.field-modal:-ms-input-placeholder {
+  color: rgb(0, 0, 0, 0.6);
+}
+.field-modal::-ms-input-placeholder {
+  color: rgb(0, 0, 0, 0.6);
+}
+.field-modal::placeholder {
+  color: rgb(0, 0, 0, 0.6);
 }
 
 .field-people {
@@ -1532,7 +1552,9 @@ legend {
   padding: 15px;
   align-self: start;
   appearance: textfield;
-
+  font-weight: 700;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
 }
 
 
