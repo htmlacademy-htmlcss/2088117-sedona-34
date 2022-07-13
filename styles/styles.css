@@ -741,7 +741,6 @@ body {
   justify-content: flex-start;
   margin: 0;
   padding: 0;
-  margin-bottom: 39px;
   color: #ffffff;
   list-style-type: none;
   align-items: center;
@@ -820,10 +819,16 @@ body {
 .second-column-catalog {
   display: flex;
   justify-content: space-between;
+  flex-wrap:wrap;
 }
 
 .first-column-catalog {
   width: 364px;
+}
+
+.filter-infra,
+.filter-type {
+  margin-bottom: 8px;
 }
 
 .catalog-filter {
@@ -930,9 +935,11 @@ body {
   margin-bottom: 15px;
 }
 
+
 .catalog-filter-item:last-child {
   margin: 0;
 }
+
 
 .hotel-card-text {
   text-align: left;
@@ -1243,7 +1250,7 @@ body {
 .buttons-filter {
   display: flex;
   flex-direction: column;
-  margin-top: 60px;
+  margin-top: 100px;
   align-items: center;
 }
 
@@ -1319,10 +1326,10 @@ legend {
   outline: 0;
 }
 
-legend {
+.fieldset-title{
   display: inline;
   padding: 0;
-  margin: 0;
+  padding-top: 40px;
   border: none;
   padding-inline-start: 0;
   padding-inline-end: 0;
@@ -1533,8 +1540,9 @@ legend {
   color: #000000;
   -moz-opacity: 0.6;
 }
+
 .field-modal:-ms-input-placeholder {
-  color: rgb(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.6);
 }
 .field-modal::-ms-input-placeholder {
   color: rgb(0, 0, 0, 0.6);
@@ -1595,19 +1603,6 @@ legend {
   align-items: center;
   align-content: center;
 }
-
-/*
-.modal-info {
-  margin-top: 11px;
-  margin-left: 155px;
-  margin-bottom: 11px;
-  text-align: left;
-}
-
-.error {
-  color: #FF5757;
-}
-*/
 
 .second-modal-row {
   position: relative;
