@@ -819,7 +819,7 @@ body {
 .second-column-catalog {
   display: flex;
   justify-content: space-between;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
 }
 
 .first-column-catalog {
@@ -1326,7 +1326,7 @@ legend {
   outline: 0;
 }
 
-.fieldset-title{
+.fieldset-title {
   display: inline;
   padding: 0;
   padding-top: 40px;
@@ -1533,22 +1533,13 @@ legend {
   font-size: 18px;
 }
 
-.field-modal::-webkit-input-placeholder {
-  color: rgb(0, 0, 0, 0.6);
-}
-.[class="field-modal"]::-moz-placeholder {
-  color: #000000;
-  -moz-opacity: 0.6;
-}
-
-.field-modal:-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.6);
-}
-.field-modal::-ms-input-placeholder {
-  color: rgb(0, 0, 0, 0.6);
-}
 .field-modal::placeholder {
   color: rgb(0, 0, 0, 0.6);
+}
+
+.field-modal::-moz-placeholder {
+  color: #000000;
+  opacity: 0.6;
 }
 
 .field-people {
