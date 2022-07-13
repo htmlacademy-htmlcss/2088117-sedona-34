@@ -573,7 +573,7 @@ body {
 
 .subscribe {
   background-color: rgb(28, 61, 83, 0.9);
-  background-size: 100% auto;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   font-size: 22px;
   line-height: 26px;
