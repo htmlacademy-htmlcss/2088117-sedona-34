@@ -434,6 +434,7 @@ body {
 .real-city-foto,
 .bridge-foto {
   object-fit: cover;
+  height: 100%;
 }
 
 .third-row {
@@ -1318,14 +1319,6 @@ body {
   content: "";
 }
 
-legend {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  outline: 0;
-}
-
 .fieldset-title {
   display: inline;
   padding: 0;
@@ -1333,6 +1326,11 @@ legend {
   border: none;
   padding-inline-start: 0;
   padding-inline-end: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
 }
 
 
